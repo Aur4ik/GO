@@ -1,4 +1,5 @@
 package main
+
 import "fmt"
 
 func main(){
@@ -90,5 +91,39 @@ func main(){
 	// }
 	// fmt.Println(sum)
 
+	var A int
+	var B int
+	var choise string
+	fmt.Println("Введите A")
+	fmt.Scan(&A)
 
+	fmt.Println("Введите B")
+	fmt.Scan(&B)
+
+
+
+	for{
+
+
+		fmt.Println("Введите Оператор Или напишите /exit")
+		fmt.Scan(&choise)
+
+		switch choise{
+		case "+":
+			fmt.Println(A + B)
+		case "-":
+			fmt.Println(A - B)
+		case "*":
+			fmt.Println(A * B)
+		case "/":
+			fmt.Println(A / B)
+		case "/exit":
+			fmt.Println("До связи")
+			return
+
+	default:
+		fmt.Println("Что то не так")
+
+	}
+}
 }
