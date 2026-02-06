@@ -100,5 +100,5 @@ func main() {
 // setZeroFirst(nums)
 // nums = addNum(nums, 200)
 
-// fmt.Println(arr,len(arr), cap(arr))
+fmt.Println("")
 }
