@@ -51,7 +51,7 @@ func getTasks(c *gin.Context) {
 		return
 	}
 	defer rows.Close()
-
+   
 	var tasks []taskmodel.Task
 
 	for rows.Next() {
